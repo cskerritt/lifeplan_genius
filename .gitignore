@@ -1,0 +1,27 @@
+.idea
+.vscode
+*.code-workspace
+*.pyc
+*~
+.venv
+venv
+db.sqlite3
+.sass-cache/
+celerybeat-schedule
+lifeplan_genius/localsettings.py
+lifeplan_genius/local.py
+static_root/
+node_modules/
+openapitools.json
+media/
+docs/_build
+_dist/
+.env
+.env.production
+.DS_Store
+.direnv
+.envrc
+
+# uncomment these lines after setting up the front-end build pipeline in dev and production
+# static/css/
+# static/js/

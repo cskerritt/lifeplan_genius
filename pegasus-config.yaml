@@ -1,0 +1,60 @@
+cli:
+  app_directory: apps
+  base_model: apps.teams.models.BaseTeamModel
+  css_framework: tailwind
+  module_path: apps
+  template_directory: templates
+  use_teams: true
+default_context:
+  _pegasus_version: '2025.4'
+  author_name: Chris
+  ci: github_actions
+  css_framework: tailwind
+  css_theme: default
+  database: postgres
+  deploy_platform: none
+  description: LCP Tool for KW
+  docker_setup: default
+  domain_name: localhost:8000
+  email: christophertskerritt@gmail.com
+  enable_github_login: n
+  enable_google_login: n
+  enable_twitter_login: n
+  front_end_framework: htmx
+  github_username: cskerritt
+  include_static_files: y
+  marketing_email_platform: none
+  plugins:
+  - group_chat
+  post_process: y
+  project_name: Lifeplan Genius
+  project_slug: lifeplan_genius
+  python_package_manager: uv
+  standalone_front_end: vite
+  stripe_payment_mode: checkout
+  subscription_billing_model: default
+  subscription_pricing_ui: in_app
+  use_2fa: y
+  use_admin_docs: n
+  use_ai_rules_claude: y
+  use_ai_rules_cursor: y
+  use_api_auth: n
+  use_api_keys: y
+  use_async: y
+  use_celery: y
+  use_cloud_media_storage: n
+  use_dark_mode: y
+  use_debug_toolbar: n
+  use_docker: y
+  use_ecommerce_example: n
+  use_examples: y
+  use_flowbite: n
+  use_health_checks: n
+  use_impersonation: y
+  use_sentry: n
+  use_shadcn: y
+  use_subscriptions: n
+  use_teams: y
+  use_teams_example: n
+  use_translations: y
+  use_wagtail: y

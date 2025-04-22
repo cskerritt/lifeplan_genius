@@ -1,0 +1,72 @@
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+extend-exclude = [
+    ".direnv",
+    ".git",
+    ".ruff_cache",
+    "node_modules",
+    "migrations",
+]
+line-length = 120
+indent-width = 4
+target-version = "py311"
+
+[tool.ruff.lint]
+fixable = [
+    "ALL",
+]
+unfixable = []
+extend-select = ["I"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.setuptools]
+py-modules = []
+
+[project]
+name = "lifeplan-genius"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "Django",
+    "celery",
+    "celery-progress",
+    "celery[redis]",
+    "channels",
+    "channels_redis",
+    "dj-rest-auth",
+    "django-allauth[socialaccount,mfa]",
+    "django-anymail[mailgun]",  # email services
+    "django-celery-beat",
+    "django-cors-headers",
+    "django-environ",
+    "django-hijack",
+    "django-htmx",
+    "django-template-partials",
+    "django-waffle",
+    "djangorestframework",
+    "djangorestframework-api-key",
+    "djangorestframework-simplejwt",
+    "drf-spectacular",
+    "psycopg2-binary",
+    "redis",
+    "wagtail",
+]
+
+[dependency-groups]
+dev = [
+    "channels[daphne]",
+    "pre-commit",
+    "ruff",
+    "pegasus-cli>=0.8",
+]
+prod = [
+    "gunicorn",
+    "uvicorn[standard]",
+]
